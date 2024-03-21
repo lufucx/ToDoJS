@@ -1,13 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <title>ToDo - JavaScript</title>
 </head>
+
 <body>
-    
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">Lista de Tarefas - ToDo</a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Início</a></li>
+            <li><a href="#">Adicionar tarefa</a></li>
+            <li><a href="#">Editar tarefa</a></li>
+            <li><a href="#">Deletar tarefa</a></li>
+          </ul>
+        </div>
+      </nav>
+
+
+
+    <div id="div1" class="header">
+        <h2>Lista de Tarefas - ToDo</h2>
+        <input type="text" id="titulo" placeholder="Adicione o título da tarefa">
+        <button id="button" class="addBtn()">Adicionar</button>
+    </div>
+
+
+    <ul id="lista">
+    </ul>
+
 
 
 
@@ -16,4 +43,5 @@
 
     <script src="js/main.js"></script>
 </body>
+
 </html>
