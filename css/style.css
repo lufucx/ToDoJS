@@ -96,7 +96,8 @@ button:hover {
     background-color: #fff;
     text-align: justify;
     font-weight: bold;
-
+    overflow-wrap: break-word; 
+    margin-top:20px;
 }
 
 .tarefa2 {
@@ -109,8 +110,8 @@ button:hover {
     border-radius: 3px;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     text-align: justify;
-    padding-inline: 10px;
-    
+    padding: 10px; 
+    overflow-wrap: break-word; 
 }
 
 #lista {
