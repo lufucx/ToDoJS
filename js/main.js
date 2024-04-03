@@ -3,7 +3,14 @@ document.getElementById('adicionarBtn').addEventListener('click', function () {
 });
 
 function adicionarTarefa() {
+document.getElementById('adicionarBtn').addEventListener('click', function () {
+  adicionarTarefa();
+});
+
+function adicionarTarefa() {
   var tituloTarefa = document.getElementById('titulo').value.trim();
+  var descricaoTarefa = document.getElementById('descricao').value.trim();
+
   var descricaoTarefa = document.getElementById('descricao').value.trim();
 
   if (tituloTarefa === '') {

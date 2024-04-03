@@ -20,9 +20,11 @@ h2 {
 
 .header {
 
+
     padding: 20px;
     margin: 50px auto;
     margin-top: 50px;
+
 
     border-radius: 10px;
     width: 500px;
@@ -49,7 +51,21 @@ textarea {
     margin-bottom: 20px;
     border: 1px solid rgb(35, 35, 35);
     border-radius: 6px;
+    border: 1px solid rgb(35, 35, 35);
+    border-radius: 6px;
     resize: none;
+    background-color: #2c2c2c;
+    color: white;
+}
+
+textarea:focus,
+input:focus,
+select:focus {
+
+    outline: 0;
+}
+
+#adicionarBtn {
     background-color: #2c2c2c;
     color: white;
 }
@@ -69,9 +85,12 @@ select:focus {
     transition: 0.5s;
     margin-top: 0px;
     margin-bottom: 25px;
+    margin-top: 0px;
+    margin-bottom: 25px;
 
 }
 
+#adicionarBtn:hover {
 #adicionarBtn:hover {
     background-color: rgb(34, 82, 255);
 
@@ -80,8 +99,15 @@ select:focus {
 .tarefa {
     width: 100%;
     background: rgba(61, 61, 61, 0);
+    background: rgba(61, 61, 61, 0);
     text-align: justify;
     font-weight: bold;
+    overflow-wrap: break-word;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: rgb(255, 255, 255);
+
+
     overflow-wrap: break-word;
     margin-top: 20px;
     margin-bottom: 10px;
@@ -92,13 +118,27 @@ select:focus {
 
 .tarefa2 {
     position: absolute;
+    position: absolute;
     list-style-type: none;
+    width: 80%;
     width: 80%;
     height: 50px;
     margin-bottom: 0px;
     margin-top: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
     border-radius: 3px;
     text-align: justify;
+    padding: 10px;
+    overflow-wrap: break-word;
+    color: rgb(255, 255, 255);
+
+    box-shadow: rgba(0, 0, 0, 0.425) 2.4px 2.4px 3.2px;
+    background: rgba(28, 28, 28, 0.72);
+    border-radius: 6px;
+
+
+
     padding: 10px;
     overflow-wrap: break-word;
     color: rgb(255, 255, 255);
@@ -203,6 +243,16 @@ select:focus {
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 16px;
+    backdrop-filter: blur(2.1px);
+}
+
+.modal-content {
+    background-color: #161616;
+    margin: 150px auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+    border-radius: 10px;
     backdrop-filter: blur(2.1px);
 }
 
