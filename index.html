@@ -10,60 +10,28 @@
 
 <body>
 
-
-
-
   <div id="div1" class="header">
     <h2>Lista de Tarefas - ToDo</h2>
     <input type="text" id="titulo" placeholder="Adicione o título da tarefa">
     <textarea name="descricao" id="descricao" cols="30" rows="10" placeholder="Adicione uma descrição"></textarea>
-    <textarea name="descricao" id="descricao" cols="30" rows="10" placeholder="Adicione uma descrição"></textarea>
-    <button id="adicionarBtn" onclick="addBtn()">Adicionar</button>
+    <button id="adicionarBtn">Adicionar</button>
 
-    <ul id="lista">
+    <ul id="lista"></ul>
 
-
-      <div id="modalEditar" class="modal">
-        <li class="modal-content">
-          <input type="text" id="editTitulo">
-          <input type="text" id="editDescricao">
-          <button id="salvarEdicao">Salvar</button>
-        </li>
-        <span class="close">&times;</span>
-      </div>
-      
-      
-
-
-      <div id="modalEditar" class="modal">
-        <li class="modal-content">
-          <input type="text" id="editTitulo">
-          <input type="text" id="editDescricao">
-          <button id="salvarEdicao">Salvar</button>
-        </li>
-        <span class="close">&times;</span>
-      </div>
-      
-      
-    </ul>
-    
-
-
-    
-
-
+    <div id="modalEditar" class="modal">
+      <li class="modal-content">
+        <input type="text" id="editTitulo">
+        <input type="text" id="editDescricao">
+        <button id="salvarEdicao">Salvar</button>
+      </li>
+      <span class="close">&times;</span>
+    </div>
   </div>
 
-
-
-
-
-
-
-
-
-
   <script src="js/main.js"></script>
+
+
+
 </body>
 
 </html>

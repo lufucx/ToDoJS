@@ -1,16 +1,5 @@
-document.getElementById('adicionarBtn').addEventListener('click', function () {
-  adicionarTarefa();
-});
-
-function adicionarTarefa() {
-document.getElementById('adicionarBtn').addEventListener('click', function () {
-  adicionarTarefa();
-});
-
 function adicionarTarefa() {
   var tituloTarefa = document.getElementById('titulo').value.trim();
-  var descricaoTarefa = document.getElementById('descricao').value.trim();
-
   var descricaoTarefa = document.getElementById('descricao').value.trim();
 
   if (tituloTarefa === '') {
@@ -70,7 +59,7 @@ function adicionarTarefa() {
   });
   deletarBotao.classList.add('deletar');
 
-  var riscado = false;
+  var riscado = false; 
 
   var riscarBotao = document.createElement('button');
   riscarBotao.textContent = 'Riscar';
@@ -80,12 +69,12 @@ function adicionarTarefa() {
       tituloElemento.style.textDecoration = '';
       descricaoElemento.style.textDecoration = '';
       riscado = false; 
-      riscarBotao.classList.remove('active'); 
+      riscarBotao.classList.remove('active');
     } else {
       
       tituloElemento.style.textDecoration = 'line-through';
       descricaoElemento.style.textDecoration = 'line-through';
-      riscado = true;
+      riscado = true; 
       riscarBotao.classList.add('active'); 
     }
   });
@@ -102,6 +91,11 @@ function adicionarTarefa() {
   document.getElementById('titulo').value = '';
   document.getElementById('descricao').value = '';
 }
+
+
+document.getElementById('adicionarBtn').addEventListener('click', function () {
+  adicionarTarefa();
+});
 
 
 document.getElementsByClassName("close")[0].onclick = function() {

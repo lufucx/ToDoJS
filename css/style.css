@@ -90,7 +90,7 @@ select:focus {
 
 }
 
-#adicionarBtn:hover {
+
 #adicionarBtn:hover {
     background-color: rgb(34, 82, 255);
 
@@ -217,18 +217,18 @@ select:focus {
     color: #000000;
     cursor: pointer;
     transition: 0.5s;
-    margin-left: 5px; 
+    margin-left: 5px;
 }
 
 .riscar:hover {
-    background-color: rgb(196, 196, 58);
+    background-color: rgb(255, 166, 0);
 }
 
 .active {
-    background-color: rgb(255, 166, 0); 
-    color: rgb(0, 0, 0); 
-  }
-  
+    background-color: rgb(255, 166, 0);
+    color: rgb(0, 0, 0);
+}
+
 
 
 
@@ -314,4 +314,3 @@ select:focus {
     text-decoration: none;
     cursor: pointer;
 }
-
