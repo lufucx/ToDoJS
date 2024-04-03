@@ -10,22 +10,32 @@
 
 <body>
 
-  <ul class="nav-bar">
-    <li><a href="">Home</a></li>
-    <li><a href="">Adicionar</a></li>
-    <li><a href="">Editar</a></li>
-    <li><a href="">Excluir</a></li>
-  </ul> 
+
 
 
   <div id="div1" class="header">
     <h2>Lista de Tarefas - ToDo</h2>
     <input type="text" id="titulo" placeholder="Adicione o título da tarefa">
-    <textarea name="descricao" id="descricao" cols="30" rows="10"></textarea>
+    <textarea name="descricao" id="descricao" cols="30" rows="10" placeholder="Adicione uma descrição"></textarea>
     <button id="adicionarBtn" onclick="addBtn()">Adicionar</button>
 
     <ul id="lista">
+
+
+      <div id="modalEditar" class="modal">
+        <li class="modal-content">
+          <input type="text" id="editTitulo">
+          <input type="text" id="editDescricao">
+          <button id="salvarEdicao">Salvar</button>
+        </li>
+        <span class="close">&times;</span>
+      </div>
+      
+      
     </ul>
+    
+
+
   </div>
 
 
